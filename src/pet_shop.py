@@ -7,11 +7,8 @@ def get_total_cash(money):
     return money ["admin"]["total_cash"]
 
 # 3.
-# def test_add_or_remove_cash__add(money):
-#   add_or_remove_cash = []
-#   for money in monies:
-#     add_or_remove_cash += money["admin"]["total_cash"]
-#   return add_or_remove_cash
+def add_or_remove_cash(money, amount_added_or_removed):
+    money ["admin"]["total_cash"] += amount_added_or_removed
     
 
 # 4.
@@ -21,11 +18,8 @@ def get_pets_sold(sold):
     return sold ["admin"]["pets_sold"]
 
 # 6.
-# def get_pets_sold(sold):
-#   sold["pets_sold"] += 2
-
-# def get_pets_sold(sold):
-#   return ["admin]["pets_sold"].append()
+def increase_pets_sold(sold, amount_sold):
+    sold ["admin"]["pets_sold"] += amount_sold
 
 # 7.
 def get_stock_count(stock):
@@ -50,7 +44,7 @@ def get_pets_by_breed(pet_shop_info, breed_type):
             breed_list.append(pet["breed"])
     return breed_list
 
-# print(get_pets_by_breed(len(2))
+# print(["breed"]"Dalmation")
 
 # 10.
 def find_pet_by_name(shop, pet_name):
@@ -58,7 +52,17 @@ def find_pet_by_name(shop, pet_name):
         if name["name"] == pet_name:
 
             return name
+
+# print(find_pet_by_name(["pets"]["name"], 2))
 # 11.
+def find_pet_by_name(shop, pet_name):
+    for name in shop["pets"]:
+        if name["name"] == pet_name:
+
+            return name
+
+
+            
 # 12.
 # 13.
 # 14.
