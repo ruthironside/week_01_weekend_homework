@@ -63,3 +63,8 @@ def find_pet_by_name(pet_shop_info, pet_name):
 # 12.
 def remove_pet_by_name(pet_shop_info, pet_name):
     pet_shop_info["pets"].remove(find_pet_by_name(pet_shop_info, pet_name))
+
+#13.
+
+def add_pet_to_stock(pet_shop_info, new_pet):
+    pet_shop_info["pets"].append(new_pet)
