@@ -77,3 +77,8 @@ def get_customer_cash(money):
 
 #15. 
 
+#16. 
+def get_customer_pet_count(customer_pets):
+    pet_count = len(customer_pets["pets"])
+  
+    return pet_count
