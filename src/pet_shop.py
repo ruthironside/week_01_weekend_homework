@@ -33,21 +33,25 @@ def get_stock_count(dict):
 
 
 # 8.
-# def get_pets_by_breed( list, breed):
-#     pets_breed = []
-#     for pet in list:
-#         if pet ["breed"] == breed:
-#             pets_breed = pet
-
-#         return pets_breed
-
-# print(get_pets_by_breed(pets, "British Shorthair"))
+def get_pets_by_breed(pet_shop_info, breed_type):
+    breed_list = []
+    for pet in pet_shop_info["pets"]:
+        if pet["breed"] == breed_type:
+            breed_list.append(pet["breed"])
+    return breed_list
 
 
 
 
 # 9.
 # 10.
+# def find_pet_by_name( list, pet_name ):
+#   found_pet = None
+#   for pet in list:
+#     if pet["pets]["name"] == pet_name:
+#       found_pet = pet
+
+#   return found_pet
 # 11.
 # 12.
 # 13.
