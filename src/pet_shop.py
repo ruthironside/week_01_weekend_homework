@@ -45,13 +45,11 @@ def get_pets_by_breed(pet_shop_info, breed_type):
 
 # 9.
 # 10.
-# def find_pet_by_name( list, pet_name ):
-#   found_pet = None
-#   for pet in list:
-#     if pet["pets]["name"] == pet_name:
-#       found_pet = pet
+def find_pet_by_name(shop, pet_name):
+    for name in shop["pets"]:
+        if name["name"] == pet_name:
 
-#   return found_pet
+            return name
 # 11.
 # 12.
 # 13.

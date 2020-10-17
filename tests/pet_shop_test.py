@@ -129,7 +129,7 @@ class TestPetShop(unittest.TestCase):
         self.assertEqual(0, len(pets))
 
 #10
-    @unittest.skip("delete this line to run the test")
+    
     def test_find_pet_by_name__returns_pet(self):
         pet = find_pet_by_name(self.cc_pet_shop, "Arthur")
         self.assertEqual("Arthur", pet["name"])
