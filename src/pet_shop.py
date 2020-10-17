@@ -28,8 +28,8 @@ def get_pets_sold(sold):
 #   return ["admin]["pets_sold"].append()
 
 # 7.
-def get_stock_count(dict):
-    return len(dict["pets"])
+def get_stock_count(stock):
+    return len(stock["pets"])
 
 
 # 8.
@@ -41,9 +41,17 @@ def get_pets_by_breed(pet_shop_info, breed_type):
     return breed_list
 
 
-
-
 # 9.
+
+def get_pets_by_breed(pet_shop_info, breed_type):
+    breed_list = []
+    for pet in pet_shop_info["pets"]:
+        if pet["breed"] == breed_type:
+            breed_list.append(pet["breed"])
+    return breed_list
+
+# print(get_pets_by_breed(len(2))
+
 # 10.
 def find_pet_by_name(shop, pet_name):
     for name in shop["pets"]:
