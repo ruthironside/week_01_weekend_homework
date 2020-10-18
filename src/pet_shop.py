@@ -76,6 +76,8 @@ def get_customer_cash(money):
     return customer_cash
 
 #15. 
+# def remove_customer_cash(customer, money)
+#     customer_cash["cash"].remove(get_customer_cash(money))
 
 #16. 
 def get_customer_pet_count(customer_pets):
